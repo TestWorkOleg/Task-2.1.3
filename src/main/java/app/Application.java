@@ -1,4 +1,4 @@
-package app;
+package app.config;
 
 import app.config.AppConfig;
 import app.model.AnimalsCage;
@@ -13,6 +13,7 @@ public class Application {
         for (int i = 0; i < 5; i++) {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
+
             bean.whatAnimalSay();
         }
     }
